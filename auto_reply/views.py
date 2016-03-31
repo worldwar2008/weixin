@@ -52,7 +52,7 @@ def chinese_segment(content):
     result = dict(zip(k,v))
     result_sorted = sorted(result.items(),key=lambda x:-x[1])
     #print result_sorted[0][0]
-    best_word = result_sorted[0][0]
+    best_word = str(result_sorted[0][0])
     return list(best_word)
 
 
@@ -60,7 +60,7 @@ def find_keyword(content):
     reply = Keyword.objects.filter(keyword=content)
     print "find_keyword.reply"
     print reply
-    
+
     return False
 
     # if len(reply):
