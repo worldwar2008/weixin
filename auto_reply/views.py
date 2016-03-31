@@ -42,6 +42,8 @@ def chinese_segment(content):
     line_list = content.split("\r\n")
     k = []
     v = []
+    print "line_list"
+    print line_list
     for line in line_list:
         if len(line)>0:
             k.append(line.split(":")[0])
@@ -58,7 +60,7 @@ def find_keyword(content):
     reply = Keyword.objects.filter(keyword=content)
     print "find_keyword.reply"
     print reply
-    
+
     if len(reply):
         return True
     else:

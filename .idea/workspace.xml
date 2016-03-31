@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a09c5df-756e-4cf6-8fd6-3846587766ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto_reply/reply.py" afterPath="$PROJECT_DIR$/auto_reply/reply.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto_reply/views.py" afterPath="$PROJECT_DIR$/auto_reply/views.py" />
     </list>
     <ignored path="weixin.iws" />
@@ -53,11 +52,21 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auto_reply/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2">
-              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.62477875">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
                 <element signature="e#14#27#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,8 +104,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="409" />
-    <option name="y" value="22" />
+    <option name="x" value="250" />
+    <option name="y" value="84" />
     <option name="width" value="1103" />
     <option name="height" value="685" />
   </component>
@@ -505,7 +514,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="409" y="22" width="1103" height="685" extended-state="0" />
+    <frame x="250" y="84" width="1103" height="685" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18944392" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -805,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18584071">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weixin_mp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15929204">
@@ -829,6 +830,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -841,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auto_reply/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.62477875">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="e#14#27#0" expanded="true" />
           </folding>
