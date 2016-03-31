@@ -88,13 +88,9 @@ def auto_reply_main(request_xml):
     """
     msg_type = request_xml.find("MsgType").text
     from_user_name = request_xml.find("FromUserName").text
-    print "auto_reply_main.from_user_name"
-    print from_user_name
 
     if msg_type == "text":
         content = request_xml.find("Content").text
-        print "auto_reply_main.content"
-        print content
 
         return HttpResponse(find_reply(from_user_name, content))
     elif msg_type == "event":
