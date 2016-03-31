@@ -80,13 +80,14 @@ def auto_reply(from_username, content):
     """
     reply = Keyword.objects.filter(keyword=content)
     print "reply"
-    print reply
-    
+
+
     #print str(reply[0].reply)
     if len(reply) > 1:
         reply = reply[random.randint(0, len(reply) - 1)]
     else:
-        reply = reply[0]
+        #reply = reply[0]
+        return text_reply_xml(from_username, content)
 
     if reply.reply.reply_type == "action":
         #注意 这里将几个函数的调用硬编码在这里了 使用的时候请注意
