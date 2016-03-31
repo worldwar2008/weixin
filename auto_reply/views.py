@@ -9,6 +9,7 @@ from auto_reply.reply import auto_reply
 
 
 def chinese_segment(content):
+    print "需要被注释掉:"*2,content
     _SEGMENT_BASE_URL = 'http://segment.sae.sina.com.cn/urlclient.php'
     payload = urllib.urlencode([('context', content.encode("utf-8")), ])
     args = urllib.urlencode([('word_tag', 1), ('encoding', 'UTF-8'), ])
