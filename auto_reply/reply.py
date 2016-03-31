@@ -79,6 +79,9 @@ def auto_reply(from_username, content):
     """根据content选择合适的回复 构造xml 返回
     """
     reply = Keyword.objects.filter(keyword=content)
+    print "reply"
+    print reply
+    
     #print str(reply[0].reply)
     if len(reply) > 1:
         reply = reply[random.randint(0, len(reply) - 1)]
