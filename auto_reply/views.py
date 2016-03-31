@@ -60,11 +60,13 @@ def find_keyword(content):
     reply = Keyword.objects.filter(keyword=content)
     print "find_keyword.reply"
     print reply
+    
+    return False
 
-    if len(reply):
-        return True
-    else:
-        return False
+    # if len(reply):
+    #     return True
+    # else:
+    #     return False
 
 
 def find_reply(from_username, content):
