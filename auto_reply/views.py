@@ -24,6 +24,9 @@ def chinese_segment(content):
     :return: 返回的应该是个
     """
     import sys, urllib2, json
+    import sys
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
 
     url = 'http://api.pullword.com/get.php?source='+\
       str(content)+\
