@@ -8,14 +8,28 @@ from auto_reply.models import Keyword, Reply
 from auto_reply.reply import auto_reply
 
 
+# def chinese_segment(content):
+#     print "需要被注释掉:"*2,content
+#     _SEGMENT_BASE_URL = 'http://segment.sae.sina.com.cn/urlclient.php'
+#     payload = urllib.urlencode([('context', content.encode("utf-8")), ])
+#     args = urllib.urlencode([('word_tag', 1), ('encoding', 'UTF-8'), ])
+#     url = _SEGMENT_BASE_URL + '?' + args
+#     result = urllib2.urlopen(url, payload).read()
+#     return json.loads(result)
+
 def chinese_segment(content):
-    print "需要被注释掉:"*2,content
-    _SEGMENT_BASE_URL = 'http://segment.sae.sina.com.cn/urlclient.php'
-    payload = urllib.urlencode([('context', content.encode("utf-8")), ])
-    args = urllib.urlencode([('word_tag', 1), ('encoding', 'UTF-8'), ])
-    url = _SEGMENT_BASE_URL + '?' + args
-    result = urllib2.urlopen(url, payload).read()
-    return json.loads(result)
+    import sys, urllib, urllib2, json
+
+    url = 'http://apis.baidu.com/apistore/pullword/words?source=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E6%98%AF%E5%A5%BD%E5%AD%A6%E6%A0%A1&param1=0&param2=1'
+
+
+    req = urllib2.Request(url)
+
+    req.add_header("apikey", "aef7aa9acf43a49bbe872e3f89fa9de4")
+
+    resp = urllib2.urlopen(req)
+    content = resp.read()
+    return content
 
 
 def find_keyword(content):
