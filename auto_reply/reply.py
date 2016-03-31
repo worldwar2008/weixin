@@ -20,7 +20,7 @@ def text_reply_xml(to_username, text):
             <CreateTime>%s</CreateTime>
             <MsgType><![CDATA[text]]></MsgType>
             <Content><![CDATA[%s]]></Content>
-            </xml>""" % (to_username, WEIXIN_ID, str(int(time.time())), text)
+            </xml>""" % (to_username, 'ofVyMt2Z9HoO-mmgjbpwPpjUQyUw', str(int(time.time())), text)
     return xml
 
 
