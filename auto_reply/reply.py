@@ -13,7 +13,7 @@ from weixin_mp.config import WEIXIN_ID
 def text_reply_xml(to_username, text):
     """构造文本回复的xml
     """
-    
+
     xml = u"""
             <xml>
             <ToUserName><![CDATA[%s]]></ToUserName>

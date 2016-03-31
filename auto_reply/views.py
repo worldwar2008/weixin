@@ -56,6 +56,9 @@ def chinese_segment(content):
 
 def find_keyword(content):
     reply = Keyword.objects.filter(keyword=content)
+    print "find_keyword.reply"
+    print reply
+    
     if len(reply):
         return True
     else:
