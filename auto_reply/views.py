@@ -18,9 +18,16 @@ from auto_reply.reply import auto_reply
 #     return json.loads(result)
 
 def chinese_segment(content):
+
+    """
+    :param content: conten是个字符串
+    :return: 返回的应该是个
+    """
     import sys, urllib2, json
 
-    url = 'http://apis.baidu.com/apistore/pullword/words?source=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E6%98%AF%E5%A5%BD%E5%AD%A6%E6%A0%A1&param1=0&param2=1'
+    url = 'http://api.pullword.com/get.php?source='+\
+      content+\
+      '&param1=0&param2=1'
 
 
     req = urllib2.Request(url)
@@ -29,9 +36,19 @@ def chinese_segment(content):
 
     resp = urllib2.urlopen(req)
     content = resp.read()
-    print "content",content
-    print "json.loads(content)",json.loads(content)
-    return json.loads(content)
+    line_list = content.split("\r\n")
+    k = []
+    v = []
+    for line in line_list:
+        if len(line)>0:
+            k.append(line.split(":")[0])
+            v.append(float(line.split(":")[1]))
+
+    result = dict(zip(k,v))
+    result_sorted = sorted(result.items(),key=lambda x:-x[1])
+    #print result_sorted[0][0]
+    best_word = result_sorted[0][0]
+    return list(best_word)
 
 
 def find_keyword(content):
