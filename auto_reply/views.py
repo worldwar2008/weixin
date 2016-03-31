@@ -26,7 +26,7 @@ def chinese_segment(content):
     import sys, urllib2, json
 
     url = 'http://api.pullword.com/get.php?source='+\
-      content+\
+      str(content)+\
       '&param1=0&param2=1'
 
 
