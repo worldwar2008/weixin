@@ -76,6 +76,8 @@ def find_reply(from_username, content):
     if reply is False:
         #直接查找没有找到对应的回复，这个时候对content进行中文分词
         segment_result = chinese_segment(content)
+        print "segment_result"
+        print segment_result
         segment_length = len(segment_result)
         while segment_length:
             segment_length -= 1
