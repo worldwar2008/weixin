@@ -52,7 +52,7 @@ def chinese_segment(content):
     result = dict(zip(k,v))
     result_sorted = sorted(result.items(),key=lambda x:-x[1])
     #print result_sorted[0][0]
-    best_word = str(result_sorted[0][0])
+    best_word = unicode(result_sorted[0][0])
     return list(best_word)
 
 
