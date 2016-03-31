@@ -29,6 +29,9 @@ def weixin_main(request):
             return HttpResponse("weixin  index")
     else:
         xml_str = smart_str(request.body)
+        print "xml_str"
+        print xml_str
+        
         request_xml = etree.fromstring(xml_str)
         response_xml = auto_reply_main(request_xml)
         return HttpResponse(response_xml)
