@@ -18,7 +18,7 @@ from auto_reply.reply import auto_reply
 #     return json.loads(result)
 
 def chinese_segment(content):
-    import sys, urllib, urllib2, json
+    import sys, urllib2, json
 
     url = 'http://apis.baidu.com/apistore/pullword/words?source=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E6%98%AF%E5%A5%BD%E5%AD%A6%E6%A0%A1&param1=0&param2=1'
 
@@ -29,7 +29,9 @@ def chinese_segment(content):
 
     resp = urllib2.urlopen(req)
     content = resp.read()
-    return content
+    print "content",content
+    print "json.loads(content)",json.loads(content)
+    return json.loads(content)
 
 
 def find_keyword(content):
