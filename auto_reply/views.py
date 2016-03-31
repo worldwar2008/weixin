@@ -92,7 +92,7 @@ def find_reply(from_username, content):
                 continue
             else:
                 return auto_reply(from_username, content)
-        return auto_reply(from_username, u"抱歉,没有符合的信息!\n标准的输入方法如下:保险公司|保险类型|产品名称")
+        return auto_reply(from_username, u"抱歉, 没有符合的信息.\n标准的输入方法如下:\n保险公司|保险类型|产品名称")
     else:
         return auto_reply(from_username, content)
 
