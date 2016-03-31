@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a09c5df-756e-4cf6-8fd6-3846587766ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto_reply/reply.py" afterPath="$PROJECT_DIR$/auto_reply/reply.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto_reply/views.py" afterPath="$PROJECT_DIR$/auto_reply/views.py" />
     </list>
     <ignored path="weixin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auto_reply/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.4159292">
+              <caret line="94" column="80" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
               <folding>
                 <element signature="e#14#27#0" expanded="true" />
               </folding>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reply.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reply.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36283186">
+            <state vertical-scroll-proportion="0.0">
               <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
               <folding />
             </state>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/auto_reply/test.py" />
         <option value="$PROJECT_DIR$/weixin/views.py" />
         <option value="$PROJECT_DIR$/weixin_mp/config.py" />
-        <option value="$PROJECT_DIR$/auto_reply/views.py" />
         <option value="$PROJECT_DIR$/auto_reply/reply.py" />
+        <option value="$PROJECT_DIR$/auto_reply/views.py" />
       </list>
     </option>
   </component>
@@ -830,6 +830,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -842,19 +850,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/auto_reply/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.4159292">
+          <caret line="94" column="80" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
           <folding>
             <element signature="e#14#27#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auto_reply/reply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36283186">
-          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
