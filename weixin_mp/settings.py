@@ -10,7 +10,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-ENV = 'SAE'
+ENV = 'OTHER'
 if ENV == "SAE":
     import sae.const
     DATABASES = {
