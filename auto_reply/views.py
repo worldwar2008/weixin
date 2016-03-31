@@ -72,7 +72,7 @@ def find_reply(from_username, content):
         segment_length = len(segment_result)
         while segment_length:
             segment_length -= 1
-            content = segment_result[segment_length]["word"]
+            content = segment_result[segment_length]
             reply = find_keyword(content)
             if reply is False:
                 continue
