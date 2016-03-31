@@ -53,6 +53,8 @@ def chinese_segment(content):
     result_sorted = sorted(result.items(),key=lambda x:-x[1])
     #print result_sorted[0][0]
     best_word = unicode(result_sorted[0][0])
+    print "best_word"
+    print best_word
     return list(best_word)
 
 
