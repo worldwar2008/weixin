@@ -1,3 +1,3 @@
 #coding=utf-8
 WEIXIN_TOKEN = "GUSKELO"
-WEIXIN_ID = "wxe85924dafb4ba8f3"
+WEIXIN_ID = 'gh_6012ef5c6268'

@@ -13,10 +13,7 @@ from weixin_mp.config import WEIXIN_ID
 def text_reply_xml(to_username, text):
     """构造文本回复的xml
     """
-    print "text_reply_xml.to_username"
-    print to_username
-    print WEIXIN_ID
-
+    
     xml = u"""
             <xml>
             <ToUserName><![CDATA[%s]]></ToUserName>
@@ -24,7 +21,7 @@ def text_reply_xml(to_username, text):
             <CreateTime>%s</CreateTime>
             <MsgType><![CDATA[text]]></MsgType>
             <Content><![CDATA[%s]]></Content>
-            </xml>""" % (to_username, 'gh_6012ef5c6268', str(int(time.time())), text)
+            </xml>""" % (to_username, WEIXIN_ID, str(int(time.time())), text)
     return xml
 
 
