@@ -5,4 +5,4 @@ local_settings.py
 run.sh
 nohup.out
 git_push.sh
-./resources/*
+resources/*
