@@ -73,7 +73,9 @@ def find_keyword(content):
 
 
 def find_reply(from_username, content):
-    """查找文本消息是否有对应的回复  如果没有的话 进行中文分词 并再次判断
+    """
+    查找文本消息是否有对应的回复  如果没有的话 进行中文分词 并再次判断
+
     """
     reply = find_keyword(content)
     if reply is False:
@@ -105,7 +107,6 @@ def auto_reply_main(request_xml):
 
     if msg_type == "text":
         content = request_xml.find("Content").text
-
         return HttpResponse(find_reply(from_user_name, content))
     elif msg_type == "event":
         event = request_xml.find("Event").text
