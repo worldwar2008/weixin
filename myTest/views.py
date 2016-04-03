@@ -17,7 +17,12 @@ def search_data_baidu_ins(cop_name,product_name):
     except Exception,e:
         return "sorry, 没找到合适的信息"
 
-
+def search_circ_ins(cop_name,product_name):
+    try:
+        m = circ.objects.get(company_name=cop_name,product_name=product_name)
+        return ["保监会注册时间: "+unicode(m.product_date),"产品类型: "+unicode(m.product_type)]
+    except Exception,e:
+        return "sorry, 没找到合适的信息"
 
 
 
