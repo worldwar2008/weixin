@@ -50,7 +50,7 @@ def co_search(request):
             cop_name = data['company_name']
             pro_name = data['product_name']
             #print "title",title
-            return HttpResponse(search_data_baidu_ins(cop_name,pro_name))
+            return HttpResponse(search_circ_ins(cop_name,pro_name))
         else:
             return HttpResponse("抱歉, 没有找到合适的信息! 我们正在努力更新更全的信息")
     form = Mybook()
